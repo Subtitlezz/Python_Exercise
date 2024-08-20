@@ -1,7 +1,7 @@
 
 ## Temperature Conversion
 
-print('1. Temp, 2. Geometry, 3. Nutrion, 4. Finance')
+print('1. Temp, 2. Geometry, 3. Nutrition, 4. Finance')
 
 ask_conversion_type = str(input('What would you like to convert?')).lower()
 
@@ -10,13 +10,14 @@ if ask_conversion_type == '1' or ask_conversion_type == 'temp':
 
     if ask_for_temp_type == "c" or ask_for_temp_type == "celsius":
         celsius = float(input("Enter a temperature in Celsius: "))
-        print(celsius * 9 / 5 + 32, 'Farenheit')
+        print(celsius * 9 / 5 + 32, 'fahrenheit')
 
     elif ask_for_temp_type == "f" or ask_for_temp_type == "fahrenheit":
         fahrenheit  = float(input("Enter a temperature in Fahrenheit : "))
         print((fahrenheit  - 32) * 5 / 9, 'Celsius')
 
 ## Geometry Convertor
+
 if ask_conversion_type == '2' or ask_conversion_type == 'geometry':
     ask_for_geo = str(input("1. \"Area\" of a circle\n2. \"Circumference\" of a Circle\nPick which one: ")).lower()
     if ask_for_geo =='1' or ask_for_geo =='area':
@@ -28,7 +29,7 @@ if ask_conversion_type == '2' or ask_conversion_type == 'geometry':
 
 ## BMI Calculator
 
-if ask_conversion_type == '3' or ask_conversion_type == 'nutrion':
+if ask_conversion_type == '3' or ask_conversion_type == 'nutrition':
     ask_for_weight = str(input("Enter a weight in kilograms: ")).lower()
     ask_for_height = float(input("Enter a height in meters: "))
     print(ask_for_weight / (ask_for_height * ask_for_height), 'is your BMI')
