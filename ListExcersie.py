@@ -17,3 +17,9 @@ for student in student_scores:
         student_grades[student] = 'Acceptable'
     else:
           student_grades[student] = 'Fail'
+
+
+ask_for_name = str(input("What is your name? "))
+
+if ask_for_name in student_grades:
+    print(f'{ask_for_name} you {student_grades[ask_for_name]} this term')
