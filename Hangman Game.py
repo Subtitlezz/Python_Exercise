@@ -9,14 +9,11 @@ chosen_word = random.choice(word_list)
 print(chosen_word)
 length = len(chosen_word)
 
-# TODO-1: Create a "placeholder" with the same number of blanks as the chosen_word
-
 for x in range(1, length + 1):
     placeholder += '_'
 
 print(placeholder)
 
-# TODO-2: Create a "display" that puts the guess letter in the right positions and _ in the rest of the string.
 while game_over is not True:
     display = ''
     guess = input("Guess a letter: ").lower()
