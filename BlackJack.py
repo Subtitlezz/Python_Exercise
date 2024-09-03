@@ -107,7 +107,7 @@ while not game_over:
             if blackjack(players[1], score(hand), hand, cards, deal) == 'hold':
                 choose_player = players[1]
 
-        elif blackjack(players[1], score(hand), hand, cards, deal) == 'hold' == 'hold' and blackjack('CPU', score(cpu_hand), cpu_hand, cards, deal) == 'hold':
+        elif blackjack(players[1], score(hand), hand, cards, deal) == 'hold' and blackjack('CPU', score(cpu_hand), cpu_hand, cards, deal) == 'hold':
             game_over = True
 
 
